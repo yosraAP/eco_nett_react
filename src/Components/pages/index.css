@@ -1,0 +1,246 @@
+:root{
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --secondaryColor : hsl(187, 85% , 43%);
+  --gradientColor : linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor : hsl(0, 0%, 100%);
+  --blackColor :hsl(201, 33% , 16%);
+  --textColor : hsl(240, 4%, 36%);
+  --whiteColorDeam : hsl(0 , 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.about {
+  min-height: 70vh;
+  max-height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.img-content {
+  width: 100%;
+  height: 600px;
+  padding-bottom: 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgAbout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.linkAbout{
+  font-size: 20px;
+  color: var(--secondaryColor)!important;
+}
+
+.linkAbout:hover {
+    color: var(--PrimaryColor)!important;
+}
+
+.rectangle-img {
+  background-image: url('../../Assets/img.jpg');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 450px;
+  margin-right: 10px;
+  transition: transform 0.5s;
+}
+
+.imgAbout:hover .rectangle-img {
+  transform: scale(1.1);
+}
+
+.title_About {
+  position: relative;
+  color: rgba(0, 0, 0, 0.493);
+  margin-bottom: 1.8rem !important;
+  font-weight: 300;
+}
+
+.title_About::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 90px;
+  border-bottom: 2px solid var(--secondaryColor);
+}
+
+
+.textColor {
+  color: var(--secondaryColor);
+}
+
+.ul_about li::before {
+  content: "• ";
+  color: var(--secondaryColor);
+  margin-left: -20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.p_about {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #1b1b1b;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.hr_about {
+  border: 2px solid rgba(0, 0, 0, 0.366);
+}
+
+
+.card-img-custom {
+  width: 100%; 
+  height: 300px;
+  object-fit: cover;
+}
+
+.divStyle {
+  margin-top: 6rem;
+  position: relative;
+  background-image: url("../../Assets/bg_residentiel.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-height: 60vh; 
+}
+
+.residentiel-content{
+  background-color: rgba(184, 168, 147, 0.489) !important;
+}
+
+.p_residentiel{
+  font-size: 150%!important;
+  font-weight: 500!important;
+  line-height: 1.5;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: 'Open Sans',sans-serif;
+}
+.title_h2 {
+  position: relative;
+  color: rgba(0, 0, 0, 0.765);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-container {
+  min-height: 580px;
+  max-height: 580px; 
+  overflow-y: auto; 
+}
+
+.Style_sec {
+  background-image: url("../../Assets/bg_title_sec.jpeg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 60vh;
+}
+
+.bg-sec-title {
+  background-color: rgba(184, 168, 147, 0.489) !important;
+  width: 100%;
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.bg-kdb{
+  background-color:rgba(1, 1, 1, 0.44);
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+.img-cafeteria{
+  background-image: url('../../Assets/nettoyageCafeterias.webp');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 450px;
+  margin-right: 10px;
+  transition: transform 0.5s;
+}
+
+.imgAbout:hover .img-cafeteria {
+  transform: scale(1.1);
+}
+
+.full-width-map {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.centered-modal .modal-dialog {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+}
+
+
+@media (max-width: 500px) {
+
+  .imgAbout {
+    margin-top: 25px;
+    margin-bottom: -1rem;
+  }
+
+  .h1_about {
+    margin-top: -2rem !important;
+  }
+
+  .hr_about {
+    margin-bottom: -1rem !important;
+  }
+
+  .divStyle{
+    margin-top: 0;
+  }
+ 
+  }
+
+  @media (max-width: 925px) {
+    .imgAbout {
+      margin-top: -1rem;
+      margin-bottom: -2rem;
+    }
+  
+    .hr_about {
+      border: 2px solid rgba(0, 0, 0, 0.366);
+      margin-top: -1rem;
+      margin-bottom: -1rem;
+    }
+  }
+
+  @media (min-width: 280px) {
+    .about{
+      min-height: 50vh !important;
+      margin-bottom: 1.5rem;
+    }
+  
+  }
+

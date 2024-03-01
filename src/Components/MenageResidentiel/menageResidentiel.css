@@ -1,0 +1,118 @@
+:root {
+  --secondaryColor: hsl(187, 85% , 43%);
+}
+
+.secDiv {
+  min-height: 70vh;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.zoom-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.title_Res {
+  position: relative;
+  color: rgba(0, 0, 0, 0.493);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.title_Res::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 90px;
+  border-bottom: 2px solid var(--secondaryColor);
+}
+
+.titleRes-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.titleRes-box:before, .titleRes-box:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-right: 0.1rem;
+  vertical-align: -0.4em;
+}
+
+.titleRes-box:before {
+  left: 0;
+  top: 0;
+  color: transparent;
+  width: 4rem;
+  height: 2rem;
+  border: solid var(--secondaryColor);
+  border-width: 4px 0 0 4px;
+}
+
+.titleRes-box:after {
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  width: 4rem;
+  height: 2rem;
+  border: solid var(--secondaryColor);
+  border-width: 0 4px 4px 0;
+}
+
+.fs-3 {
+  padding: 1.2rem 1rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 414px) {
+  .secDiv {
+    min-height: 110vh;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 393px) {
+  .secDiv {
+    min-height: 120vh;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .secDiv {
+    min-height: 150vh;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .secDiv {
+    min-height: 130vh;
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=menageResidentiel.css.map */

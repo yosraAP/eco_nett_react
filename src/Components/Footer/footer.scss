@@ -1,0 +1,90 @@
+/* Footer.css */
+:root {
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --secondaryColor: hsl(187, 85%, 43%);
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+}
+
+.footer {
+    background-color: var(--whiteColorDeam);
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .iconLogo{
+        font-size: 30px;
+        color: #333;
+    }
+
+    .footer-links {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .footer-links li {
+        margin: 0 15px;
+      }
+      
+      .footer-links a {
+        color: #333;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      .footer-links li:not(:last-child)::after {
+        content: "|"; 
+        margin-left: 10px; 
+        color: #333; 
+      }
+
+    .icon {
+        font-size: 25px;
+        color: var(--gradientColor) !important;
+    }
+
+    &:hover .icon {
+        color: var(--PrimaryColor) !important;
+    }
+
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        display: flex; 
+        justify-content: center; 
+      }
+      
+      .social-links a {
+        color: var(--PrimaryColor);
+        font-size: 24px;
+        text-decoration: none;
+      }
+      
+      .social-links a:hover {
+        color: var(--secondaryColor);
+      }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links {
+      flex-direction: column;
+      line-height: 1.5;
+    }
+  
+    .footer-links li {
+      margin: 5px 0;
+    }
+  
+    .footer-links li:not(:last-child)::after {
+      display: none;
+    }
+  }

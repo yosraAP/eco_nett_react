@@ -1,0 +1,142 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+  min-height: 60vh;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secContent .singleService {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 140, 0.549);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.main .secContent .singleService:hover {
+  background: var(--cardHover) !important;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.379);
+  transform: translateY(-10px);
+}
+.main .secContent .imgDiv {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .secContent .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .secContent .cardInfo {
+  padding: 1rem;
+}
+.main .secContent .cardInfo .titleService {
+  color: var(--blackColor);
+  font-size: 1.5rem;
+}
+.main .secContent .cardInfo .btnMain {
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--whiteColor);
+  background: var(--gradientColor);
+  font-weight: 600;
+  border: none;
+  font-size: 1rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .secContent .cardInfo .btnMain a {
+  color: var(--whiteColorDeam);
+}
+.main .secContent .cardInfo .btnMain .iconMain {
+  align-self: center;
+  font-size: 20px;
+}
+.main .secContent .cardInfo .btnMain:hover {
+  background: var(--secondaryColor);
+}
+
+.mainText {
+  text-align: center;
+  margin: auto;
+  max-height: 70vh;
+  margin-bottom: 3rem;
+}
+.mainText h1 {
+  margin-top: 3rem;
+  max-width: 100%;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333 !important;
+  font-family: Raleway, sans-serif;
+}
+.mainText span {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  line-height: 1.5;
+  color: #333 !important;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 375px) {
+  .main {
+    min-height: 50vh;
+  }
+  .secContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .secContent .singleService {
+    height: auto;
+  }
+  .secContent .imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleService {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleService {
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+.infoResidentiel .containerStyle {
+  background-image: url("../../Assets/bgTitreResidentiel.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  font-size: 2rem !important;
+  padding: 20px;
+}
+.infoResidentiel .containerStyle h1 {
+  max-width: 960px;
+  color: rgb(37, 36, 36);
+  background: rgba(184, 168, 147, 0.528);
+}
+
+@media screen and (max-width: 500px) {
+  .containerStyle h1 {
+    align-items: center;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .containerStyle h1 {
+    font-size: 1.8rem;
+    align-items: center;
+  }
+}/*# sourceMappingURL=infoResidentiel.css.map */

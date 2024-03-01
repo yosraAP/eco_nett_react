@@ -1,0 +1,114 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.menuNavbar {
+  min-height: 1.2rem;
+  display: block;
+  padding: 1.2rem 0;
+  max-width: 100%;
+  min-width: auto;
+}
+.menuNavbar a {
+  font-family: Raleway, sans-serif;
+  color: var(--textColor);
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.menuNavbar a:hover {
+  color: var(--secondaryColor);
+}
+
+.logo {
+  max-width: 180px;
+  max-height: auto;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+  padding: -0.5rem 0;
+}
+.logo img {
+  transition: 1 ease-in-out;
+}
+.logo:hover {
+  transform: scale(0.8);
+}
+
+.dropdown-menu {
+  min-width: 20px !important;
+}
+
+.btnLang {
+  background: transparent;
+  color: var(--PrimaryColor);
+  margin-left: 20%;
+  border: none;
+}
+.btnLang:hover {
+  color: var(--secondaryColor);
+}
+
+.navContent a {
+  font-family: Raleway, sans-serif;
+  color: var(--textColor);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.navContent a:hover {
+  color: var(--secondaryColor);
+}
+
+.icon-large {
+  font-size: 35px;
+  display: none;
+  color: var(--PrimaryColor);
+}
+.icon-large:hover {
+  color: var(--secondaryColor);
+}
+
+.icon {
+  font-size: 35px;
+  color: var(--PrimaryColor);
+}
+.icon:hover {
+  color: var(--secondaryColor);
+}
+
+@media (max-width: 987px) {
+  .menuNavbar {
+    display: none;
+  }
+  .icon-large {
+    display: block;
+  }
+}
+.navbar {
+  background-color: none;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background-color: var(--bodyColor) !important;
+    min-height: 9%;
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 280px) {
+  .navbar {
+    min-height: 100px !important;
+  }
+}
+@media (max-width: 912px) {
+  .divLogo {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

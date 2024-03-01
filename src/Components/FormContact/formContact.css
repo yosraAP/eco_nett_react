@@ -1,0 +1,66 @@
+:root {
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85% , 43%);
+}
+
+.btn {
+  background: var(--gradientColor) !important;
+  color: var(--whiteColorDeam);
+  cursor: pointer;
+  border: none !important;
+}
+
+.btn:hover {
+  background: var(--secondaryColor) !important;
+  border: none !important;
+}
+
+.form-control::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.619) !important;
+}
+
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.619) !important;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.619);
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.619);
+}
+
+input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0, 0, 0, 0.619);
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.619);
+}
+
+.form-check-input {
+  border: 1px solid rgba(0, 0, 0, 0.232);
+}
+
+.form-check-input:checked {
+  background-color: #35b2b7;
+  border: none;
+}
+
+.label_c {
+  font-size: 0.85rem;
+}
+
+.p_form {
+  font-size: 0.75rem;
+}
+.p_form a {
+  color: var(--PrimaryColor);
+}
+
+.text-dark {
+  color: rgba(0, 0, 0, 0.292);
+}/*# sourceMappingURL=formContact.css.map */

@@ -1,0 +1,91 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85% , 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor:hsl(201, 33% , 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0 , 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.offre {
+  min-height: 50vh;
+  margin-top: 2rem;
+  background: var(--bodyColor);
+}
+
+.title_offre {
+  margin-top: 1rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.685);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.title_offre::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 210px;
+  border-bottom: 2px solid var(--secondaryColor);
+  transform: translateX(-50%);
+}
+
+.custom-column {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: center;
+  justify-items: center;
+  height: 180px;
+  margin: 2.75em 0;
+  padding: 1.5rem 1.25rem 1.65rem;
+  position: relative;
+  background-color: var(--whiteColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.379);
+  transition: 0.3s ease-in-out;
+}
+
+.h3_title_offre {
+  color: var(--blackColor);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  direction: ltr;
+}
+
+.custom-column:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.379);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.icon-container {
+  position: absolute;
+  top: -40px;
+  z-index: 10;
+}
+
+.iconEcoNett {
+  font-size: 35px;
+  color: var(--secondaryColor);
+}
+
+.iconEcoNett:hover {
+  color: var(--PrimaryColor);
+}
+
+@media (max-width: 500px) {
+  .custom-column {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .custom-column {
+    margin-top: 0.5rem;
+  }
+}/*# sourceMappingURL=offre.css.map */
